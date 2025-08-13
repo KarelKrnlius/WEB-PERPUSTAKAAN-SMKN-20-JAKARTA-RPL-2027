@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda SMKN 20</title>
+    <link rel="stylesheet" href="../css/beranda.css">
+    <link rel="stylesheet" href="../css/typing.css"> <!-- Style efek ngetik -->
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="logo-text">📚 Perpustakaan Digital</span>
+
+            <!-- Tambah Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/smkn20jktofficial/" target="_blank">
+                    <img src="../Asset/Image/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/pages/SMK-Negeri-20/208847925795937" target="_blank">
+                    <img src="../Asset/Image/Facebook logo.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="container nav-container">
+        <div class="nav-logo">
+            <img src="../Asset/Image/smkn-20-jakarta.png" alt="Logo Perpustakaan">
+            <span>Perpustakaan SMKN 20 Jakarta</span>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="daftar buku.html">Daftar Buku</a></li>
+            <li><a href="#">Peminjaman</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+        </ul>
+    </div>
+</nav>
+<script>
+document.getElementById('nav-toggle').onclick = function() {
+    document.getElementById('nav-menu').classList.toggle('active');
+};
+</script>
+    <!-- Hero Section -->
+    <section class="hero-slider">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('../Asset/Image/foto 1.png');"></div>
+            <div class="slide" style="background-image: url('../Asset/Image/foto 2.jpg');"></div>
+            <div class="slide" style="background-image: url('../Asset/Image/foto\ 3.jpg');"></div>
+        </div>
+
+        <div class="hero-text">
+            <h1 id="typing"></h1> <!-- Efek ngetik -->
+            <p>Informasi tentang SMKN 20 Jakarta</p>
+            <a href="https://id.wikipedia.org/wiki/SMK_Negeri_20_Jakarta" class="btn-primary">BACA SELENGKAPNYA</a>
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <!-- Indicator -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        </section>
+
+    <section class="tentang-kami">
+    <div class="container tentang-flex">
+        <div class="tentang-info">
+            <h2>Tentang Kami</h2>
+            <p>
+                Perpustakaan SMKN 20 Jakarta adalah pusat literasi dan sumber belajar bagi seluruh siswa, guru, dan staf sekolah. Kami menyediakan berbagai koleksi buku, majalah, dan sumber digital untuk mendukung proses pembelajaran dan pengembangan pengetahuan.
+            </p>
+            <ul>
+                <li>Fasilitas ruang baca yang nyaman</li>
+                <li>Koleksi buku lengkap dan up-to-date</li>
+                <li>Layanan peminjaman dan pengembalian buku secara digital</li>
+                <li>Staf perpustakaan yang ramah dan siap membantu</li>
+            </ul>
+        </div>
+        <div class="tentang-maps">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.844758104159!2d106.7939579!3d-6.284128499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ae706b0769%3A0x505fe488419d09ea!2sSMK%20Negeri%2020%20Jakarta%20Selatan!5e0!3m2!1sid!2sid!4v1755070724538!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" 
+                height="250" 
+                style="border:0; border-radius:12px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+<!-- ...existing code... -->
+    <!-- Panggil JS -->
+    <script src="../js/slider.js"></script>
+    <script src="../js/typing.js"></script>
+</body>
+</html>

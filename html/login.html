@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Perpustakaan SMKN 20</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="logo-text">📚 Perpustakaan Digital</span>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/smkn20jktofficial/" target="_blank">
+                    <img src="../Asset/Image/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/pages/SMK-Negeri-20/208847925795937" target="_blank">
+                    <img src="../Asset/Image/Facebook logo.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <img src="../Asset/Image/smkn-20-jakarta.png" alt="Logo Perpustakaan">
+                <span>Perpustakaan SMKN 20 Jakarta</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="daftar buku.html">Daftar Buku</a></li>
+                <li><a href="#">Peminjaman</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <form class="login-box">
+            <div class="login-logo"></div>
+            <h2><span class="highlight">SMKN</span>20</h2>
+            <p class="subtitle">AKSES MENUJU PERPUSTAKAAN DIGITAL</p>
+
+            <label>NISN</label>
+<input type="text" name="nisn" placeholder="Masukkan NISN Dengan Benar" required>
+
+
+            <label>Password</label>
+            <div class="password-wrapper">
+                <input type="password" placeholder="Masukkan Password dengan Benar" required>
+                <span class="eye-icon">👁</span>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox"> Simpan Login</label>
+                <a href="">Butuh Bantuan ?</a>
+            </div>
+
+            <button type="submit" class="enter-btn">Login</button>
+        </form>
+    </section>
+</body>
+
+<script src="../js/login.js"></script>
+
+</html>

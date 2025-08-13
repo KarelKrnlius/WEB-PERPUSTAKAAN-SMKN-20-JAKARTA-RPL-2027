@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #59c5e3;
+    color: white;
+    padding: 5px 0;
+}
+
+.top-bar .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.nav-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: rgba(74, 63, 63, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background: rgba(52, 52, 52, 0.8);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Konten Buku BSE */
+.buku-bse {
+    background: url('../Asset/Image/bg\ login.jpg') no-repeat center center/cover;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.buku-bse h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #9cff5a;
+}
+
+.buku-bse p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bse-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.bse-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.bse-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.bse-card:hover {
+    transform: scale(1.05);
+}

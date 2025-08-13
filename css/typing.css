@@ -1,0 +1,25 @@
+/* typing.css */
+
+/* Style untuk teks efek ngetik */
+#typing {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff; /* kursor */
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+/* Animasi ketik */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animasi kursor berkedip */
+@keyframes blink {
+    50% { border-color: transparent }
+}
